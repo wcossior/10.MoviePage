@@ -32,22 +32,23 @@ body {
     display: flex;
     align-items: center;
 }
+
 .nav ul li a {
     text-decoration: none;
     margin-left: 12px;
     color: var(--quaternary);
 }
 
-.nav ul li i{
+.nav ul li i {
     color: var(--quaternary);
     font-size: 15px;
 }
 
-.nav ul li{
+.nav ul li {
     list-style: none;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     padding: 0;
     width: 100%;
@@ -79,5 +80,25 @@ body {
 
 .logo {
     height: 50px;
+}
+
+@media (max-width: 992px) {
+    nav ul li a {
+        display: none;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .nav {
+        padding: 8px 25px;
+    }
+    .search{
+        width: 100%;
+        height: 35px;
+    }
+    .logo{
+        height: 35px;
+    }
 }
 
