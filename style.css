@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+:root {
+    --primary: #202123;
+    --secondary: #343541;
+    --tertiary: #444654;
+    --quaternary: #FECC6D;
+    --quinary: #8D40D4;
+    --tenary: #fafafa;
+}
 
 * {
     box-sizing: border-box;
@@ -13,16 +23,38 @@ body {
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: #262626;
+    background-color: var(--secondary);
 }
 
-.header{
-    display: flex;
+.nav {
+    background-color: var(--primary);
     padding: 15px 60px;
-    background-color: #0B0C0F;
+    display: flex;
+    align-items: center;
+}
+.nav ul li a {
+    text-decoration: none;
+    margin-left: 12px;
+    color: var(--quaternary);
 }
 
-#search {
+.nav ul li i{
+    color: var(--quaternary);
+    font-size: 15px;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.search {
     margin-left: auto;
     font-family: 'Poppins', sans-serif;
     height: 40px;
@@ -30,25 +62,22 @@ body {
     border-radius: 30px;
     padding: 0 15px;
     border: none;
-    color: #fafafa;
-    border: 2px #FECC6D solid;
+    color: var(--tenary);
+    border: 2px var(--quaternary) solid;
     background-color: transparent;
 }
 
-#search:focus{
-    background-color: #262626;
+.search:focus {
+    background-color: var(--secondary);
     outline: none;
     border: none;
 }
 
-#search::placeholder{
+.search::placeholder {
     color: darkgrey;
-}
-
-#search::-ms-clear{
-    color: re;
 }
 
 .logo {
     height: 50px;
 }
+

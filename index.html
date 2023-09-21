@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Movies Site Web</title>
 </head>
+
 <body>
     <div class="container">
-        <header class="header">
-            <img class="logo" src="logo.svg" alt="Logo of the Site Web">
-            <input type="search" name="search" id="search" placeholder="Seach...">
+        <header>
+            <nav class="nav">
+                <img class="logo" src="logo.svg" alt="Logo of the Site Web">
+                <ul class="menu">
+                    <li><i class="fi fi-rr-house-blank"></i><a href="#">Home</a></li>
+                    <li><i class="fi fi-rr-camera-movie"></i><a href="#">Movies</a></li>
+                    <li><i class="fi fi-rr-screen"></i><a href="#">Series</a></li>
+                    <li><i class="fi fi-rr-rectangle-list"></i><a href="#">Categories</a></li>
+                </ul>
+                <input class="search" placeholder="Seach...">
+            </nav>
         </header>
         <div class="content"></div>
         <div class="footer"></div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
