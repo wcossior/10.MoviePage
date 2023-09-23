@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 :root {
@@ -15,14 +15,14 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     margin: 0;
     overflow-x: hidden;
+    display: flex;
 }
 
 .container {
     width: 100vw;
-    height: 100vh;
     background-color: var(--secondary);
 }
 
@@ -56,8 +56,7 @@ body {
 }
 
 .search {
-    margin-left: auto;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     height: 40px;
     width: 260px;
     border-radius: 30px;
@@ -82,6 +81,31 @@ body {
     height: 50px;
 }
 
+.content {
+    height: 1200px;
+}
+
+.card {
+    margin: 60px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: rgba(14, 30, 37, 0.574) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.movie-img {
+    display: block;
+    width: 100%;
+}
+
 @media (max-width: 992px) {
     nav ul li a {
         display: none;
@@ -93,12 +117,13 @@ body {
     .nav {
         padding: 8px 25px;
     }
-    .search{
+
+    .search {
         width: 100%;
         height: 35px;
     }
-    .logo{
+
+    .logo {
         height: 35px;
     }
 }
-
