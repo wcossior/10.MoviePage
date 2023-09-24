@@ -31,6 +31,7 @@ body {
     padding: 15px 60px;
     display: flex;
     align-items: center;
+    box-shadow: rgba(14, 30, 37, 0.574) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .nav ul li a {
@@ -83,18 +84,48 @@ body {
 
 .content {
     height: 1200px;
+    padding: 60px;
 }
 
 .card {
-    margin: 60px;
+    position: relative;
     width: 100%;
     max-width: 300px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover{
-    transform: scale(1.02);
+    transform: scale(1.01) translateZ(0);
     box-shadow: rgba(14, 30, 37, 0.574) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.overview{
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to bottom, #8c40d428 0%, #8c40d4d2 33%, #8c40d4f4 100%);
+    padding: 12px 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: opacity 0.2s ease;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.overview h3{
+    font-size: 22px;
+    color: var(--tenary);
+}
+
+.overview span{
+    font-size: 18px;
+    color: var(--tenary);
 }
 
 .img-container {
@@ -113,7 +144,6 @@ body {
 }
 
 @media (max-width: 630px) {
-
     .nav {
         padding: 8px 25px;
     }
