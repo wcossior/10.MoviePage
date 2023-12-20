@@ -25,10 +25,6 @@ You can check it out: [HERE](https://wcossior.github.io/10.MoviePage/)
 - Enter keywords in the search bar to find movies.
 - Hover over a movie to view more details.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Movie data provided by [The Movie Database (TMDb)](https://www.themoviedb.org/).
