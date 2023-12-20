@@ -1,1 +1,1 @@
-[MoviesPage](https://wcossior.github.io/10.MoviePage)
+[MoviesPage](https://wcossior.github.io/10.MoviePage/)
