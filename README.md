@@ -1,6 +1,6 @@
 # MoviePage
 
-MoviePage is a simple web application that retrieves movie information from [The Movie Database (TMDb)](https://www.themoviedb.org/). Users can search for movies using the provided search bar. The project is built using HTML, CSS, and JavaScript.
+MoviePage is a web application that retrieves movie information from [The Movie Database (TMDb)](https://www.themoviedb.org/). Users can search for movies using the provided search bar. The project is built using HTML, CSS, and JavaScript.
 
 You can check it out: [HERE](https://wcossior.github.io/10.MoviePage/)
 
